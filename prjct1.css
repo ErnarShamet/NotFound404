@@ -1,101 +1,332 @@
 * {
     margin: 0;
     padding: 0;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body {
-    display: block;
+a {
+    color: rgb(187, 172, 172);
+}
+
+a::selection {
+    background-color: red;
+    color: blue;
 }
 
 img {
     width: 100%;
 }
 
-h1 {
-    margin: 40px 50px 0px 50px;
-    font-size: 20px;
-}
-
-@media screen and (max-width:768px) {
-    h1 {
-        flex-direction: column;
-        background: orange;
-    }
-
-    .bodyy {
-        background: orange;
-        flex-direction: column;
-        width: auto;
-    }
-
-    img {
-        margin-top: 10px;
-        width: 200%;
-    }
-
-    h2 {
-        align-items: center;
-        justify-content: center;
-        padding: 10px 10px 0px 10px;
-        font-size: 5px;
-    }
-
-    p {
-        font-size: 10px;
-        padding: 0px 10px 20px 10px;
-    }
-
-    .right {
-        width: 100%;
-    }
-
-    button {
-        flex-direction: column;
-        margin: 20px 50px 20px 50px;
-        text-align: center;
-    }
-}
-
-.bodyy {
-    margin: 50px 50px 0px 50px;
-    display: flex;
-}
-
-
-.left {
-    width: 50%;
-}
-
-.right {
-    width: 100%;
-    display: flex;
+body {
+    width: 1200px;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    color: #000000;
 }
 
 h2 {
-    font-size: 50px;
+    margin-top: 10px;
+    font-size: 70px;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 p {
-    margin: 40px 0px 20px 0px;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 40px;
+    width: 70%;
+    font-size: 30px;
+    color: rgb(187, 172, 172);
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
 }
 
 button {
+    margin-top: 70px;
     font-size: 20px;
+
     color: #fff;
     background: #000;
-    border: 0;
-    padding: 10px 20px;
-    cursor: pointer;
+    border: none;
+    text-align: center;
+    padding: 20px;
+}
+button:hover{
+    background-color: red;
+}
 
-    margin: 20px 50px 20px 50px;
+.block {
+    margin-top: 20px;
+    display: flex
+}
+
+.left {
+    width: 100%;
+    object-fit: cover;
+}
+
+.right {
+    margin-left: 50px;
+    width: 100%;
+}
+
+footer {
+    color: rgb(187, 172, 172);
+    margin-top: 150px;
     text-align: center;
 }
 
-button :hover {
-    background: red;
+@media screen and (max-width:750px) and (max-width:0px),
+screen and (max-height:667px) {
+    body {
+        width: 840px;
+        justify-content: center;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .right {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    h2 {
+        font-size: 90px;
+        margin-top: 10px;
+    }
+
+    p {
+        width: 90%;
+        font-size: 50px;
+        margin-top: 10px;
+    }
+
+    button {
+        margin-top: 30px;
+    }
+
+    footer {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width:828px) and (max-width:820px),
+screen and (max-height:896px) {
+    h1 {
+        font-size: 40px;
+        padding-left: 30px;
+    }
+
+    img {
+        padding-left: 30px;
+    }
+
+    h2 {
+        margin-top: 40px;
+    }
+
+    p {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    button {
+        margin-top: 80px;
+        font-size: 40px;
+    }
+
+    footer {
+        margin-top: 800px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:780px) and (max-width:750px),
+screen and (max-height:844px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    img {
+        padding-left: 30px;
+    }
+
+    h2 {
+        margin-top: 35px;
+    }
+
+    p {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    button {
+        margin-top: 80px;
+        font-size: 40px;
+    }
+
+    footer {
+        margin-top: 300px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:720px) and (max-width:0px),
+screen and (max-height:740px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    img {
+        padding-left: 30px;
+    }
+
+    h2 {
+        margin-top: 35px;
+    }
+
+    footer {
+        margin-top: 120px;
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width:820px) and (max-width:780px),
+screen and (max-height:1180px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    body {
+        width: 800px;
+    }
+
+    img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .block {
+        display: block;
+        margin: 0;
+    }
+
+    .right {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: start;
+        font-size: 90px;
+    }
+
+    p {
+        width: 80%;
+        text-align: start;
+        font-size: 60px;
+    }
+
+    button {
+        font-size: 50px;
+    }
+
+    footer {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:912px) and (max-width:828px),
+screen and (max-height:1368px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    body {
+        width: 900px;
+    }
+
+    img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .block {
+        display: block;
+        margin: 0;
+    }
+
+    .right {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: start;
+        font-size: 90px;
+    }
+
+    p {
+        width: 80%;
+        text-align: start;
+        font-size: 60px;
+    }
+
+    button {
+        font-size: 50px;
+    }
+
+    footer {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:1280px) and (max-width:912px),
+screen and (max-height:653px) {
+
+    button {
+        margin-top: 15 0px;
+    }
+
+    footer {
+        margin-top: 500px;
+    }
+}
+
+@media screen and (max-width:1280px) and(max-width:950px),
+screen and (max-height:800px) {
+    body {
+        width: 1200px;
+    }
+
+    button {
+        margin-top: 15 0px;
+    }
+
+    footer {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width:1280px)and (max-width:2000px) {
+    body {
+        width: 1200px;
+    }
 }
